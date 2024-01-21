@@ -17,7 +17,7 @@ function getStartEnd({ start, end }: { start: string, end: string | null }) {
 
 export default function Experiences() {
   return (
-    <>
+    <div className="flex flex-col  justify-between ">
       <H2> Experience </H2>
       {experiences.map((e, i) => (
         <Card key={i}>
@@ -40,6 +40,6 @@ export default function Experiences() {
           </CardFooter>
         </Card>
       ))}
-    </>
+    </div>
   )
 }
